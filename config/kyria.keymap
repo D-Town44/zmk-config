@@ -2,6 +2,8 @@
  * Copyright (c) 2020 The ZMK Contributors
  *
  * SPDX-License-Identifier: MIT
+ * 
+ * Keymap by Daniel Willeitner
  */
 
 #include <behaviors.dtsi>
