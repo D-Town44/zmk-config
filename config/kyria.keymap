@@ -50,7 +50,7 @@
 		// |--------+------+------+------+------+------|                              |------+------+------+------+------+--------|
 		// |        |   1  |   2  |   3  |   4  |   5  |                              |   6  |   7  |   8  |   9  |   0  |  \ |   |
 		// |--------+------+------+------+------+------+-------------.  ,-------------+------+------+------+------+------+--------|
-		// |        |      |      |      |   {  | { [  |      |      |  |      | QUIT |  } ] |   }  |      |      |      |        |
+		// | BT CLR |BT NXT|      |      |   {  | { [  |      |      |  |      | QUIT |  } ] |   }  |      |      |      |        |
 		// `----------------------+------+------+------+------+------|  |------+------+------+------+------+----------------------'
 		//                        |      |      |      |      |      |  |      |      |      |      |      |
 		//                        |      |      |      |      |      |  |      |      |      |      |      |
@@ -59,10 +59,10 @@
 		num_layer {
 		  label = "NUM";
 				bindings = <
-					&kp TILDE	&kp EXCL				&kp AT	&kp HASH	&kp DLLR	&kp PRCNT																										&kp CARET &kp AMPS  &kp STAR  &kp LPAR	&kp RPAR	&kp BSLH
-					&none			&kp 1						&kp 2		&kp 3			&kp 4			&kp 5																												&kp 6			&kp 7			&kp 8     &kp 9			&kp 0			&kp BSLH
-					&bt BT_CLR	&bt BT_NXT		&none		&none			&kp LBRC	&kp LBRT	&bt BT_CLR		&bt BT_NXT			&none &kp LC(LG(Q))	&kp RBRT	&kp RBRC  &none			&none			&none			&none
-																						&none			&none			&none			&none					&none						&none &none					&none			&none			&none
+					&kp TILDE		&kp EXCL			&kp AT	&kp HASH	&kp DLLR	&kp PRCNT																		&kp CARET &kp AMPS  &kp STAR  &kp LPAR	&kp RPAR	&kp BSLH
+					&none				&kp 1					&kp 2		&kp 3			&kp 4			&kp 5																				&kp 6			&kp 7			&kp 8     &kp 9			&kp 0			&kp BSLH
+					&bt BT_CLR	&bt BT_NXT		&none		&none			&kp LBRC	&kp LBRT	&none &none		&none &kp LC(LG(Q))	&kp RBRT	&kp RBRC  &none			&none			&none			&none
+																						&none			&none			&none			&none	&none		&none &none					&none			&none			&none
 					>;
 
 					sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
